@@ -1,18 +1,15 @@
-# symfony-template
-Implements xxx in symfony
+# welp-mailchimp-bundle
+Implements WelpMailchimpBundle in symfony
 
-| Branch     | xxx Version | Symfony Version | PHP Version     |
-|------------|-------------|-----------------|-----------------|
-| [4.4.x][1] | `x.x`       | `4.4.x`         | `7.4` or higher |
+| Branch   | WelpMailchimpBundle Version | Symfony Version | PHP Version     |
+|----------|-----------------------------|-----------------|-----------------|
+| [1.x][1] | `1.x`                       | `4.4.x`         | `7.4` or higher |
 
 
-Read [xxx Docs](xxx)
-
-### Resources  
-- [xxx](xxx)
+Read [WelpMailchimpBundle Docs](https://welpdev.github.io/mailchimp-bundle/)
 
 
 ### License
-The code is licensed under the [MIT License](https://github.com/habibun/symfony-template/blob/master/LICENSE)
+The code is licensed under the [MIT License](https://github.com/habibun/welp-mailchimp-bundle/blob/master/LICENSE)
 
-[1]: https://github.com/habibun/symfony-template/tree/5.4.x
+[1]: https://github.com/habibun/welp-mailchimp-bundle/tree/1.x

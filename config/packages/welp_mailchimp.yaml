@@ -1,3 +1,6 @@
 welp_mailchimp:
     api_key: '%env(MAILCHIMP_API_KEY)%'
+    lists:
+        2c757e2cb4:
+            subscriber_provider: 'app_mailchimp_fos_subscriber_provider'
 

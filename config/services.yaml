@@ -28,3 +28,7 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    app_mailchimp_fos_subscriber_provider:
+        class: Welp\MailchimpBundle\Provider\FosSubscriberProvider
+        arguments: ['@fos_user.user_manager']

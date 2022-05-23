@@ -24,19 +24,18 @@ class MailchimpController extends AbstractController
     /**
      * @Route("/subscribe", name="app_mailchimp_subscribe")
      */
-    public function subscribe(Request $request, EventDispatcherInterface $eventdispatcher)
+    public function subscribe(Request $request, EventDispatcherInterface $eventDispatcher): JsonResponse
     {
         $subscriber = new Subscriber($request->request->get('email'), [], [
             'language' => $request->getLocale(),
         ]);
 
         try {
-            $eventdispatcher->dispatch(
-                SubscriberEvent::EVENT_SUBSCRIBE, new SubscriberEvent('b6909a170e', $subscriber)
+            $eventDispatcher->dispatch(
+                new SubscriberEvent('2c757e2cb4', $subscriber), SubscriberEvent::EVENT_SUBSCRIBE
             );
         } catch (\Exception $e) {
-            throw $e;
-            return new JsonResponse(['error' => 'An error has occured']);
+            return new JsonResponse(['error' => 'An error has occurred']);
         }
 
         return new JsonResponse(['success' => 'You have successfully subscribed to our newsletter']);
